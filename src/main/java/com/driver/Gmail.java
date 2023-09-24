@@ -18,10 +18,6 @@ private  ArrayList<String> trashBin = new ArrayList<>();
           this.inboxCapacity = inboxCapacity;
     }
 
-    public Gmail(String emailId) {
-        super(emailId);
-    }
-
 
     public void receiveMail(Date date, String sender, String message){
         // If the inbox is full, move the oldest mail in the inbox to trash and add the new mail to inbox.
