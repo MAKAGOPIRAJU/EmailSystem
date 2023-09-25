@@ -28,7 +28,7 @@ public class Email {
 // 5. It contains at least one special character. Any character apart from alphabets and digits is a special character
 
 
-        if(oldPassword.equals(newPassword)) {
+        if(oldPassword.equals(this.password)) {
 
             boolean length = false;
             boolean upperCharacter = false;
