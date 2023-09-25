@@ -60,7 +60,7 @@ private  ArrayList<String> trashBin = new ArrayList<>();
                 if(seqMessages.get(i).equals(message)) seqMessages.remove(i);//remove that message from seqMessages also
             }
 
-            trashBin.add(message);
+            trashBin.add(message);//add that message into thrashBin
         }
 
 
@@ -100,7 +100,9 @@ private  ArrayList<String> trashBin = new ArrayList<>();
 
         for(Date date : Inbox.values()) {
 
-           if(date.equals(start) || date.equals(end) || (date.compareTo(start) >= 0 && date.compareTo(end) <= 0)) noOfMails++;
+           if(date.compareTo(start) >= 0 && date.compareTo(end) <= 0){
+               noOfMails++;
+           }
         }
 
         return  noOfMails;
