@@ -8,7 +8,7 @@ public class Gmail extends Email {
 private HashMap<String , Date> Inbox    = new HashMap<>();
 private  ArrayList<String> seqMessages  = new ArrayList<>();
 
-private  ArrayList<String> trashBin = new ArrayList<>();
+private  ArrayList<String> trashBin     = new ArrayList<>();
 
     int inboxCapacity; //maximum number of mails inbox can store
     //Inbox: Stores mails. Each mail has date (Date), sender (String), message (String). It is guaranteed that message is distinct for all mails.
